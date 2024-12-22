@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="FoodOrderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wup-B3-rSH">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="114"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1LZ-N2-3wb">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="114"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEZ-hH-qms">
+                        <rect key="frame" x="12" y="106" width="100" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray5Color"/>
+                        <color key="highlightedColor" systemColor="systemPinkColor"/>
+                        <color key="shadowColor" systemColor="labelColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dok-3m-nhb">
+                        <rect key="frame" x="74.333333333333329" y="0.0" width="49.666666666666671" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
+                        <connections>
+                            <action selector="addButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0KO-L5-pH9"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VEZ-hH-qms" secondAttribute="bottom" constant="8" id="0Oo-Dp-xIj"/>
+                <constraint firstAttribute="bottom" secondItem="1LZ-N2-3wb" secondAttribute="bottom" id="6eK-8c-79N"/>
+                <constraint firstItem="1LZ-N2-3wb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ApH-sB-Vki"/>
+                <constraint firstItem="VEZ-hH-qms" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Bxb-gN-fpO"/>
+                <constraint firstAttribute="trailing" secondItem="1LZ-N2-3wb" secondAttribute="trailing" id="CCn-BX-JHV"/>
+                <constraint firstAttribute="trailing" secondItem="wup-B3-rSH" secondAttribute="trailing" id="Lhz-5R-pRO"/>
+                <constraint firstItem="wup-B3-rSH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LjJ-K7-NsO"/>
+                <constraint firstAttribute="trailing" secondItem="dok-3m-nhb" secondAttribute="trailing" id="ZWY-HS-jid"/>
+                <constraint firstItem="dok-3m-nhb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bOY-ja-3Fr"/>
+                <constraint firstItem="wup-B3-rSH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jEY-Jd-sRw"/>
+                <constraint firstItem="VEZ-hH-qms" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="ltm-Hw-pnB"/>
+                <constraint firstAttribute="bottom" secondItem="wup-B3-rSH" secondAttribute="bottom" id="rm0-2f-VHE"/>
+                <constraint firstItem="1LZ-N2-3wb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="znh-sr-nRA"/>
+            </constraints>
+            <size key="customSize" width="124" height="114"/>
+            <connections>
+                <outlet property="button" destination="dok-3m-nhb" id="OSq-KZ-U25"/>
+                <outlet property="image" destination="1LZ-N2-3wb" id="24w-qq-QzL"/>
+                <outlet property="label" destination="VEZ-hH-qms" id="llm-LZ-pq9"/>
+            </connections>
+            <point key="canvasLocation" x="225.95419847328245" y="-26.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

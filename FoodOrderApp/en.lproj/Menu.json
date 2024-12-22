@@ -1,0 +1,77 @@
+
+ [
+     {
+         "categoryName": "Main dishes",
+         "categoryImage": "anaYemek",
+         "foods": [
+             {
+                 "foodName": "Spaghetti alla Carbonara",
+                 "foodImage": "spaghettiCarbonara",
+                 "foodIngredients": ["Spaghetti", "Eggs", "Pancetta", "Pecorino Cheese", "Black Pepper"],
+                 "foodPrice": "12"
+             },
+             {
+                 "foodName": "Lasagna",
+                 "foodImage": "lasagna",
+                 "foodIngredients": ["Lasagna Sheets", "Ground Beef", "Tomato Sauce", "Bechamel Sauce", "Parmesan Cheese"],
+                 "foodPrice": "15"
+             }
+         ]
+     },
+     {
+         "categoryName": "Salads",
+         "categoryImage": "salatlar",
+         "foods": [
+             {
+                 "foodName": "Caprese",
+                 "foodImage": "caprese",
+                 "foodIngredients": ["Mozzarella", "Tomatoes", "Basil", "Olive Oil", "Salt", "Pepper"],
+                 "foodPrice": "8"
+             },
+             {
+                 "foodName": "Insalata Mista",
+                 "foodImage": "insalataMista",
+                 "foodIngredients": ["Mixed Greens", "Tomatoes", "Cucumbers", "Olives", "Red Onion", "Olive Oil", "Balsamic Vinegar"],
+                 "foodPrice": "7"
+             }
+         ]
+     },
+     {
+         "categoryName": "Dessert",
+         "categoryImage": "dessertler",
+         "foods": [
+             {
+                 "foodName": "Tiramisu",
+                 "foodImage": "tiramisu",
+                 "foodIngredients": ["Mascarpone", "Ladyfingers", "Espresso", "Cocoa Powder", "Sugar", "Eggs"],
+                 "foodPrice": "6"
+             },
+             {
+                 "foodName": "Panna Cotta",
+                 "foodImage": "pannaCotta",
+                 "foodIngredients": ["Heavy Cream", "Sugar", "Vanilla", "Gelatin"],
+                 "foodPrice": "5"
+             }
+         ]
+     },
+     {
+         "categoryName": "Beverages",
+         "categoryImage": "ickiler",
+         "foods": [
+             {
+                 "foodName": "Espresso",
+                 "foodImage": "espresso",
+                 "foodIngredients": ["Espresso Beans"],
+                 "foodPrice": "2"
+             },
+             {
+                 "foodName": "Limoncello",
+                 "foodImage": "limoncello",
+                 "foodIngredients": ["Lemon Peel", "Alcohol", "Sugar"],
+                 "foodPrice": "4"
+             }
+         ]
+     }
+ ]
+
+ 
